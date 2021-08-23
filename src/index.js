@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-// import Login from './Login.js';
+// import App from './App.js';
 import Home from './Home.js';
 import Footer from './Footer.js';
+import About from './About.js';
+import Login from './Login.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-
     <Home />
+    <Login />
+    <About />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

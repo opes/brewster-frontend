@@ -74,14 +74,6 @@ export default function Example() {
                         'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                       )}
                     >
-                      <span>Solutions</span>
-                      <ChevronDownIcon
-                        className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
-                          'ml-2 h-5 w-5 group-hover:text-gray-500'
-                        )}
-                        aria-hidden="true"
-                      />
                     </Popover.Button>
 
                     <Transition
@@ -228,7 +220,7 @@ export default function Example() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                    src="/coffee.jpeg"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />

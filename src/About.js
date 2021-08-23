@@ -4,6 +4,14 @@ const people = [
       name: 'Whitney Francis',
       role: 'Copywriter',
       imageUrl:
+        '/alonzo.jpeg',
+      twitterUrl: '#',
+      linkedinUrl: '#',
+    },
+    {
+      name: 'Chap Francis',
+      role: 'Copywriter',
+      imageUrl:
         'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
       twitterUrl: '#',
       linkedinUrl: '#',
