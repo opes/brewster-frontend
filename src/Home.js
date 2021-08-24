@@ -43,7 +43,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <header>
@@ -54,7 +54,7 @@ export default function Example() {
                 <span className="sr-only">Brewster</span>
                 <img
                   className="h-8 w-auto sm:h-10"
-                  src="/full-logo2.png"
+                  src="/brewlogo.png"
                   alt="Brewster Logo"
                 />
               </a>
