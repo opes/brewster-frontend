@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 import './App.css';
+import Home from './Home.js';
+import Login from './Login.js';
+import SignUp from './SignUp.js';
+import About from './About.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends Component {
 
-export default App;
+render() {
+    return (
+      <Router>
+        <div>
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={(routerProps) => <Home {...routerProps} />}
+            />
+            <Route
+              path="/login"
+              exact
+              render={(routerProps) => <Login {...routerProps} />}
+            />
+            <Route
+              path="/signup"
+              exact
+              render={(routerProps) => <SignUp {...routerProps} />}
+            />
+            <Route
+              path="/about"
+              exact
+              render={(routerProps) => <About {...routerProps} />}
+            />
+            {/* <Route
+              path="/citations"
+              exact
+              render={(routerProps) => <Citations {...routerProps} />}
+            /> */}
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
+};
+
