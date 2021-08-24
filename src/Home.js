@@ -10,32 +10,33 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import Footer from './Footer.js';
 
 const solutions = [
   {
-    name: 'Inbox',
+    name: '#',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '/Login',
     icon: InboxIcon,
   },
   {
-    name: 'Messaging',
+    name: '#',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
     icon: AnnotationIcon,
   },
-  { name: 'Live Chat', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
+  { name: '#', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
   {
-    name: 'Knowledge Base',
+    name: '#',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
     icon: QuestionMarkCircleIcon,
   },
 ]
 const navigation = [
-  { name: 'Pricing', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About', href: '/About' },
+  { name: 'Citations', href: '/Citations' },
+  { name: 'Tech', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -49,12 +50,12 @@ export default function Example() {
         <Popover className="relative bg-white">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
-                <span className="sr-only">Workflow</span>
+              <a href="/Home">
+                <span className="sr-only">Brewster</span>
                 <img
                   className="h-8 w-auto sm:h-10"
                   src="/full-logo2.png"
-                  alt=""
+                  alt="Brewster Logo"
                 />
               </a>
             </div>
@@ -118,11 +119,11 @@ export default function Example() {
               ))}
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/Login" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign in
               </a>
               <a
-                href="#"
+                href="/SignUp"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Sign up
@@ -150,7 +151,8 @@ export default function Example() {
                       <img
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Workflow"
+                        alt="Brewster"
+                        href="/Home"
                       />
                     </div>
                     <div className="-mr-2">
@@ -191,14 +193,14 @@ export default function Example() {
                   </div>
                   <div className="mt-6">
                     <a
-                      href="#"
+                      href="/SignUp"
                       className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                     >
                       Sign up
                     </a>
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
                       Existing customer?
-                      <a href="#" className="text-gray-900">
+                      <a href="/Login" className="text-gray-900">
                         Sign in
                       </a>
                     </p>
@@ -227,8 +229,8 @@ export default function Example() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Take control of your</span>
-                    <span className="block text-indigo-200">customer support</span>
+                    <span className="block text-white">Welcome to the</span>
+                    <span className="block text-indigo-200">Brewster API</span>
                   </h1>
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
@@ -257,44 +259,11 @@ export default function Example() {
 
           {/* Logo cloud */}
           <div className="bg-gray-100">
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                Trusted by over 5 very average small businesses
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
-                  />
-                </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
-                  />
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
+        <Footer />
 
-        {/* More main page content here... */}
       </main>
     </div>
   )
