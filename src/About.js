@@ -1,23 +1,8 @@
-/*
-  This example requires Tailwind CSS v2.0+
 
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 const people = [
     {
-      name: 'Chen',
-      role: 'Senior Front-end Developer',
+      name: 'Chen Zhao',
+      role: 'Full-Stack Web Developer',
       imageUrl:
         'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
       bio:
@@ -26,8 +11,8 @@ const people = [
       linkedinUrl: '#',
     },
     {
-        name: 'Derek',
-        role: 'Senior Front-end Developer',
+        name: 'Derek Hudgins',
+        role: 'Full-Stack Web Developer',
         imageUrl:
           'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         bio:
@@ -36,8 +21,8 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Kyle',
-        role: 'Senior Front-end Developer',
+        name: 'Kyle Mayer',
+        role: 'Full-Stack Web Developer',
         imageUrl:
           'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         bio:
@@ -46,8 +31,8 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Peter',
-        role: 'Senior Front-end Developer',
+        name: 'Peter Montano',
+        role: 'Full-Stack Web Developer',
         imageUrl:
           'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         bio:
