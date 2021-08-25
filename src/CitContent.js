@@ -1,19 +1,4 @@
-/*
-  This example requires Tailwind CSS v2.0+
 
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-    ],
-  }
-  ```
-*/
 export default function CitationContent() {
     return (
       <div className="relative py-16 bg-white overflow-hidden">
@@ -32,7 +17,7 @@ export default function CitationContent() {
                 Tailwind UI
               </span>
             </h1>
-            <p className="mt-8 text-xl text-gray-500 leading-8">
+            <p className="mt-8 text-xl text-gray-500 leading-10">
               pre-made Tailwind CSS components........
               kjdfkadjf
 

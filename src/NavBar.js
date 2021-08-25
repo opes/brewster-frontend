@@ -35,7 +35,7 @@ const solutions = [
   const navigation = [
     { name: 'About', href: '/About' },
     { name: 'Citations', href: '/Citations' },
-    { name: 'Tech', href: '#' },
+    { name: 'Tech', href: '/Tech' },
   ]
 
   function classNames(...classes) {
