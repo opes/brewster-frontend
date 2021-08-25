@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import  { Redirect, useHistory } from 'react-router-dom'
+import  { useHistory } from 'react-router-dom'
 
 export default function SignUp() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
-  
+
   const onSubmitForm = async (e) => {
     e.preventDefault()
     try {
