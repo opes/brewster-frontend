@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
+import  { Redirect, useHistory } from 'react-router-dom'
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const history = useHistory();
 
   const onSubmitForm = async (e) => {
     e.preventDefault()
     try {
         const body = { email, password }
-        await fetch("https://localhost:7890/api/v1/auth/signup", {
+        console.log(email, password)
+        await fetch("http://localhost:7890/api/v1/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
         setEmail('')
         setPassword('')
-        window.locations('/')
+        return history.push('/')
     } catch (error) {
         console.log(error.message)
     }
