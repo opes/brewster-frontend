@@ -43,6 +43,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -50,7 +51,7 @@ export default function Home() {
         <Popover className="relative bg-white">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/Home">
+              <a href="/">
                 <span className="sr-only">Brewster</span>
                 <img
                   className="h-8 w-auto sm:h-10"
