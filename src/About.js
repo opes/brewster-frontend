@@ -1,10 +1,12 @@
+import Footer from './Footer.js';
+import NavBar from './NavBar.js';
 
 const people = [
     {
       name: 'Chen Zhao',
       role: 'Full-Stack Web Developer',
       imageUrl:
-        'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        '/gradient1.png',
       bio:
         'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
       twitterUrl: '#',
@@ -14,7 +16,7 @@ const people = [
         name: 'Derek Hudgins',
         role: 'Full-Stack Web Developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          '/gradient2.png',
         bio:
           'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
         twitterUrl: '#',
@@ -24,17 +26,17 @@ const people = [
         name: 'Kyle Mayer',
         role: 'Full-Stack Web Developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        '/gradient3.png',
         bio:
           'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        twitterUrl: '#',
-        linkedinUrl: '#',
+        twitterUrl: 'https://twitter.com/0xMayer',
+        linkedinUrl: 'https://www.linkedin.com/in/kyle-mayer88/',
       },
       {
         name: 'Peter Montano',
         role: 'Full-Stack Web Developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        '/gradient4.png',
         bio:
           'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
         twitterUrl: '#',
@@ -45,6 +47,7 @@ const people = [
   export default function About() {
     return (
       <div className="bg-white">
+        <NavBar />
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
@@ -101,7 +104,9 @@ const people = [
               </ul>
             </div>
           </div>
+
         </div>
+        <Footer />
       </div>
     )
   }
