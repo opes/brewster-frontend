@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import  { Redirect, useHistory } from 'react-router-dom'
 
 export default function SignUp() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const history = useHistory();
+  
   const onSubmitForm = async (e) => {
     e.preventDefault()
     try {
@@ -16,7 +18,7 @@ export default function SignUp() {
         });
         setEmail('')
         setPassword('')
-        // window.locations('/')
+        return history.push('/')
     } catch (error) {
         console.log(error.message)
     }
