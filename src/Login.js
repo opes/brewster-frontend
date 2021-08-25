@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  { Redirect, useHistory } from 'react-router-dom'
+import  { useHistory } from 'react-router-dom'
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ export default function Login() {
     try {
         const body = { email, password }
         console.log(email, password)
-        await fetch("http://localhost:7890/api/v1/auth/login", {
+        await fetch("https://warm-gorge-13979.herokuapp.com/api/v1/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import  { Redirect, useHistory } from 'react-router-dom'
+import  { useHistory } from 'react-router-dom'
 
 export default function SignUp() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
-  
+
   const onSubmitForm = async (e) => {
     e.preventDefault()
     try {
         const body = { email, password }
-        await fetch("http://localhost:7890/api/v1/auth/signup", {
+        await fetch("https://warm-gorge-13979.herokuapp.com/api/v1/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
