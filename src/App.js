@@ -11,7 +11,6 @@ import SignUp from './SignUp.js';
 import About from './About.js';
 import Citations from './Citations.js';
 import Tech from './Tech.js';
-
 export default class App extends Component {
 
 render() {

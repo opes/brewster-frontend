@@ -11,7 +11,7 @@ export default function SignUp() {
     e.preventDefault()
     try {
         const body = { email, password }
-        await fetch("http://warm-gorge-13979.herokuapp.com/api/v1/auth/signup", {
+        await fetch("https://warm-gorge-13979.herokuapp.com/api/v1/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
