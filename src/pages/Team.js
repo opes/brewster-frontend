@@ -6,27 +6,27 @@ const people = [
       name: 'Chen Zhao',
       role: 'Full-Stack Web Developer',
       imageUrl:
-        '/gradient1.png',
+        '/chen.jpeg',
       bio:
-      'Favorite coffee: ____',
-      twitterUrl: '#',
-      linkedinUrl: '#',
+      'Favorite coffee: Chai latte',
+      twitterUrl: 'https://twitter.com/devchen1',
+      linkedinUrl: 'https://www.linkedin.com/in/hi-yusei/',
     },
     {
         name: 'Derek Hudgins',
         role: 'Full-Stack Web Developer',
         imageUrl:
-          '/gradient2.png',
+          '/derek.jpg',
         bio:
-          'Favorite coffee: ____',
+          'Favorite coffee: Americano',
         twitterUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/derekhudgins/',
       },
       {
         name: 'Kyle Mayer',
         role: 'Full-Stack Web Developer',
         imageUrl:
-        '/gradient3.png',
+        '/kyle.png',
         bio:
         'Favorite coffee: Vanilla latte',
         twitterUrl: 'https://twitter.com/0xMayer',
@@ -36,10 +36,11 @@ const people = [
         name: 'Peter Montano',
         role: 'Full-Stack Web Developer',
         imageUrl:
-        '/gradient4.png',
+        '/peter.jpeg',
         bio:
-        'Favorite coffee: ____',
-        linkedinUrl: '#',
+        'Favorite coffee: Chai latte',
+        twitterUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/petermontano/',
       }
   ]
 
@@ -64,7 +65,7 @@ const people = [
                   <li key={person.name}>
                     <div className="space-y-4">
                       <div className="aspect-w-3 aspect-h-2">
-                        <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                        <img className="object-cover object-top shadow-lg rounded-lg" src={person.imageUrl} alt="" />
                       </div>
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3>{person.name}</h3>
