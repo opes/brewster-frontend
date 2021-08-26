@@ -11,6 +11,7 @@ import SignUp from './SignUp.js';
 import About from './About.js';
 import Citations from './Citations.js';
 import Tech from './Tech.js';
+import Landing from './Landing.js';
 export default class App extends Component {
 
 render() {
@@ -48,6 +49,11 @@ render() {
               exact
               render={(routerProps) => <Tech {...routerProps} />}
             />
+            <Route
+            path="/landing"
+            exact
+            render={(routerProps) => <Landing {...routerProps} />}
+          />
           </Switch>
         </div>
       </Router>
