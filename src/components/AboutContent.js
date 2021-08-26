@@ -2,35 +2,35 @@ import { CheckIcon } from '@heroicons/react/outline'
 
 const features = [
   {
-    name: 'Invite team members',
+    name: 'Latte',
     description: 'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
   },
   {
-    name: 'Notifications',
+    name: 'Americano',
     description: 'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
   },
   {
-    name: 'List view',
+    name: 'Espresso',
     description: 'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
   },
   {
-    name: 'Boards',
+    name: 'Mocha',
     description: 'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
   },
   {
-    name: 'Keyboard shortcuts',
+    name: 'Classic Drip',
     description: 'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
   },
   {
-    name: 'Reporting',
+    name: 'Cold Brew',
     description: 'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
   },
   {
-    name: 'Calendars',
+    name: 'Flat White',
     description: 'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
   },
   {
-    name: 'Mobile app',
+    name: 'Nitro',
     description: 'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
   },
 ]
