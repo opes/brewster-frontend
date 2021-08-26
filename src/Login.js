@@ -18,7 +18,7 @@ export default function Login() {
         });
         setEmail('')
         setPassword('')
-        return history.push('/')
+        return history.push('/Landing')
     } catch (error) {
         console.log(error.message)
     }
