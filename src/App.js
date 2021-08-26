@@ -1,17 +1,17 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import './App.css';
-import Home from './Home.js';
-import Login from './Login.js';
-import SignUp from './SignUp.js';
-import About from './About.js';
-import Citations from './Citations.js';
-import Tech from './Tech.js';
-import Landing from './Landing.js';
+import Home from './pages/Home.js';
+import Login from './pages/Login.js';
+import SignUp from './pages/SignUp.js';
+import Team from './pages/Team.js';
+import Resources from './pages/Resources.js';
+import About from './pages/About.js';
+import Landing from './pages/Landing.js';
 export default class App extends Component {
 
 render() {
@@ -35,19 +35,19 @@ render() {
               render={(routerProps) => <SignUp {...routerProps} />}
             />
             <Route
+              path="/team"
+              exact
+              render={(routerProps) => <Team {...routerProps} />}
+            />
+            <Route
+              path="/resources"
+              exact
+              render={(routerProps) => <Resources {...routerProps} />}
+            />
+              <Route
               path="/about"
               exact
               render={(routerProps) => <About {...routerProps} />}
-            />
-            <Route
-              path="/citations"
-              exact
-              render={(routerProps) => <Citations {...routerProps} />}
-            />
-              <Route
-              path="/tech"
-              exact
-              render={(routerProps) => <Tech {...routerProps} />}
             />
             <Route
             path="/landing"

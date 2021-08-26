@@ -1,6 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+
+import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import {
   AnnotationIcon,
   ChatAlt2Icon,
@@ -8,46 +8,47 @@ import {
   MenuIcon,
   QuestionMarkCircleIcon,
   XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import Footer from './Footer.js';
+} from '@heroicons/react/outline';
 
 const solutions = [
   {
-    name: '#',
+    name: 'Documentation',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '/Login',
-    icon: InboxIcon,
-  },
-  {
-    name: '#',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: "#",
     icon: AnnotationIcon,
   },
-  { name: '#', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
   {
-    name: '#',
+    name: 'Developer Community',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '#',
+    icon: ChatAlt2Icon,
+  },
+  {
+    name: 'Contact Us',
+    description: "Your customers' data will be safe and secure.",
+    href: '#',
+    icon: InboxIcon
+  },
+  {
+    name: 'Help',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
     icon: QuestionMarkCircleIcon,
   },
 ]
 const navigation = [
-  { name: 'About', href: '/About' },
-  { name: 'Citations', href: '/Citations' },
-  { name: 'Tech', href: '/Tech' },
+  { name: 'About', href: '/about' },
+  { name: 'Team', href: '/team' },
+  { name: 'Resources', href: '/resources' },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
 
-
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-white">
-      <header>
+  export default function NavBar() {
+    return (
+        <header>
         <Popover className="relative bg-white">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -120,11 +121,11 @@ export default function Home() {
               ))}
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a href="/Login" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/login" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign in
               </a>
               <a
-                href="/SignUp"
+                href="/signup"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Sign up
@@ -194,14 +195,14 @@ export default function Home() {
                   </div>
                   <div className="mt-6">
                     <a
-                      href="/SignUp"
+                      href="/signup"
                       className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                     >
                       Sign up
                     </a>
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
                       Existing customer?
-                      <a href="/Login" className="text-gray-900">
+                      <a href="/login" className="text-gray-900">
                         Sign in
                       </a>
                     </p>
@@ -212,60 +213,5 @@ export default function Home() {
           </Transition>
         </Popover>
       </header>
-
-      <main>
-        <div>
-          {/* Hero card */}
-          <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-                <div className="absolute inset-0">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="/coffee.jpeg"
-                    alt="People working on laptops"
-                  />
-                  <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
-                </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                  <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Welcome to the</span>
-                    <span className="block text-indigo-200">Brewster API</span>
-                  </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                    amet fugiat veniam occaecat fugiat aliqua.
-                  </p>
-                  <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
-                      >
-                        Drinks
-                      </a>
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Live demo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Logo cloud */}
-          <div className="bg-gray-100">
-
-          </div>
-        </div>
-        <Footer />
-
-      </main>
-    </div>
-  )
-}
+    )
+  }

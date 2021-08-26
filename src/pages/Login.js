@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import  { useHistory } from 'react-router-dom'
+import  { useHistory } from 'react-router-dom';
 
-export default function SignUp() {
-
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
@@ -11,33 +10,37 @@ export default function SignUp() {
     e.preventDefault()
     try {
         const body = { email, password }
-        await fetch("https://warm-gorge-13979.herokuapp.com/api/v1/auth/signup", {
+        console.log(email, password)
+        await fetch("https://warm-gorge-13979.herokuapp.com/api/v1/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
         setEmail('')
         setPassword('')
-        return history.push('/')
+        return history.push('/landing')
     } catch (error) {
         console.log(error.message)
     }
 }
 
+
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <a href="/">
           <img
             className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-            alt="Workflow"
+            src="/brewlogo.png"
+            alt="Brewster Logo"
           />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign up for an account</h2>
+          </a>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6" onSubmit={onSubmitForm} method="POST">
+            <form className="space-y-6" onSubmit={onSubmitForm} method="POST">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   Email address
@@ -99,7 +102,7 @@ export default function SignUp() {
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-800 hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800"
                 >
-                  Sign up
+                  Sign in
                 </button>
               </div>
             </form>

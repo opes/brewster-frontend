@@ -1,5 +1,5 @@
-import Footer from './Footer.js';
-import NavBar from './NavBar.js';
+import NavBar from '../components/NavBar.js';
+import Footer from '../components/Footer.js';
 
 const people = [
     {
@@ -8,7 +8,7 @@ const people = [
       imageUrl:
         '/gradient1.png',
       bio:
-        'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      'Favorite coffee: ____',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -18,7 +18,7 @@ const people = [
         imageUrl:
           '/gradient2.png',
         bio:
-          'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+          'Favorite coffee: ____',
         twitterUrl: '#',
         linkedinUrl: '#',
       },
@@ -28,7 +28,7 @@ const people = [
         imageUrl:
         '/gradient3.png',
         bio:
-          'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+        'Favorite coffee: Vanilla latte',
         twitterUrl: 'https://twitter.com/0xMayer',
         linkedinUrl: 'https://www.linkedin.com/in/kyle-mayer88/',
       },
@@ -38,23 +38,21 @@ const people = [
         imageUrl:
         '/gradient4.png',
         bio:
-          'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        twitterUrl: '#',
+        'Favorite coffee: ____',
         linkedinUrl: '#',
       }
   ]
 
-  export default function About() {
+  export default function Team() {
     return (
       <div className="bg-white">
         <NavBar />
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Team</h2>
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet the Team</h2>
               <p className="text-xl text-gray-500">
-                Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-                vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
+              We are a team of agile developers with diverse backgrounds and perspectives who are excited to make a coffee focused API accessible and easy to use.
               </p>
             </div>
             <div className="lg:col-span-2">
