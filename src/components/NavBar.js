@@ -152,9 +152,9 @@ const navigation = [
                     <div>
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        src="/brewster-mini.png"
                         alt="Brewster"
-                        href="/Home"
+                        href="/"
                       />
                     </div>
                     <div className="-mr-2">
