@@ -263,13 +263,13 @@ export default function Home() {
                         href="/landing"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
                       >
-                        Get Started
+                        Drinks
                       </a>
                       <a
-                        href="#"
+                        href="/endpoints"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                       >
-                        Documentation
+                        API endpoints
                       </a>
                     </div>
                   </div>
