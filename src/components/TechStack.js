@@ -1,6 +1,6 @@
 export default function TechStack() {
-    return (
-      <div className="flex">
+  return (
+    <div className="flex">
       <div className="mr-4 flex-shrink-0">
         <svg
           className="h-16 w-16"
@@ -8,13 +8,17 @@ export default function TechStack() {
           viewBox="0 0 512 512"
           aria-hidden="true"
         >
-         <path fill="#000" d="M256 18.365L50.14 136 256 253.635 461.86 136 256 18.365zm-154 168L50.14 216 256 333.635 461.86 216 410 186.365l-154 88-154-88zm0 80L50.14 296 256 413.635 461.86 296 410 266.365l-154 88-154-88zm0 80L50.14 376 256 493.635 461.86 376 410 346.365l-154 88-154-88z"/>
+          <path
+            fill="#000"
+            d="M256 18.365L50.14 136 256 253.635 461.86 136 256 18.365zm-154 168L50.14 216 256 333.635 461.86 216 410 186.365l-154 88-154-88zm0 80L50.14 296 256 413.635 461.86 296 410 266.365l-154 88-154-88zm0 80L50.14 376 256 493.635 461.86 376 410 346.365l-154 88-154-88z"
+          />
         </svg>
       </div>
       <div>
         <h4 className="text-lg font-bold">Technology Stack</h4>
         <p className="mt-1">
-          This project used a variety of JavaScript libraries for both the backend and frontend. We used Express as our NodeJS framework.
+          This project used a variety of JavaScript libraries for both the
+          backend and frontend. We used Express as our NodeJS framework.
         </p>
 
         <div className="mt-6 flex">
@@ -34,7 +38,9 @@ export default function TechStack() {
           <div>
             <h4 className="text-lg font-bold">NodeJS</h4>
             <p className="mt-1">
-            An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+              An open-source, cross-platform, back-end JavaScript runtime
+              environment that runs on the V8 engine and executes JavaScript
+              code outside a web browser.
             </p>
           </div>
         </div>
@@ -55,7 +61,8 @@ export default function TechStack() {
           <div>
             <h4 className="text-lg font-bold">ReactJS</h4>
             <p className="mt-1">
-            A free and open-source front-end JavaScript library for building user interfaces or UI components.
+              A free and open-source front-end JavaScript library for building
+              user interfaces or UI components.
             </p>
           </div>
         </div>
@@ -67,35 +74,22 @@ export default function TechStack() {
               viewBox=".15 .13 799.7 479.69"
               aria-hidden="true"
             >
-<path d="m400 .13c-106.63 0-173.27 53.3-199.93 159.89 39.99-53.3 86.64-73.28 139.95-59.96 30.42 7.6 52.16 29.67 76.23 54.09 39.2 39.78 84.57 85.82 183.68 85.82 106.62 0 173.27-53.3 199.92-159.9-39.98 53.3-86.63 73.29-139.95 59.97-30.41-7.6-52.15-29.67-76.22-54.09-39.2-39.78-84.58-85.82-183.68-85.82zm-199.93 239.84c-106.62 0-173.27 53.3-199.92 159.9 39.98-53.3 86.63-73.29 139.95-59.96 30.41 7.61 52.15 29.67 76.22 54.08 39.2 39.78 84.58 85.83 183.68 85.83 106.63 0 173.27-53.3 199.93-159.9-39.99 53.3-86.64 73.29-139.95 59.96-30.42-7.59-52.16-29.67-76.23-54.08-39.2-39.78-84.57-85.83-183.68-85.83z" fill="#06b6d4"/>
+              <path
+                d="m400 .13c-106.63 0-173.27 53.3-199.93 159.89 39.99-53.3 86.64-73.28 139.95-59.96 30.42 7.6 52.16 29.67 76.23 54.09 39.2 39.78 84.57 85.82 183.68 85.82 106.62 0 173.27-53.3 199.92-159.9-39.98 53.3-86.63 73.29-139.95 59.97-30.41-7.6-52.15-29.67-76.22-54.09-39.2-39.78-84.58-85.82-183.68-85.82zm-199.93 239.84c-106.62 0-173.27 53.3-199.92 159.9 39.98-53.3 86.63-73.29 139.95-59.96 30.41 7.61 52.15 29.67 76.22 54.08 39.2 39.78 84.58 85.83 183.68 85.83 106.63 0 173.27-53.3 199.93-159.9-39.99 53.3-86.64 73.29-139.95 59.96-30.42-7.59-52.16-29.67-76.23-54.08-39.2-39.78-84.57-85.83-183.68-85.83z"
+                fill="#06b6d4"
+              />
             </svg>
           </div>
           <div>
             <h4 className="text-lg font-bold">Tailwind CSS</h4>
             <p className="mt-1">
-            A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+              A utility-first CSS framework packed with classes like flex, pt-4,
+              text-center and rotate-90 that can be composed to build any
+              design, directly in your markup.
             </p>
           </div>
-        </div>
-        <div className="mt-6 flex">
-          <div className="mr-4 flex-shrink-0">
-            <svg
-              className="h-12 w-12"
-              preserveAspectRatio="none"
-              viewBox="0 0 256 299"
-              aria-hidden="true"
-            >
-              <path d="M60.556 47.602L0 144.01l60.556 96.424 1.056-.753L60.837 47.8l-.281-.198" fill="#876929"/><path d="M128.187 223.105l-67.631 17.329V47.602l67.631 17.325v158.178" fill="#D9A741"/><path d="M255.979 71.868l-32.6 5.391L148.538 0l-37.207 16.292 4.908 9.153-26.333 10.526v243.428l38.28 19.153.637-.499-.589-250.235 81.142 122.968 46.603-98.918" fill="#876929"/><path d="M148.538 0l99.679 49.837-39.417 71.52L148.538 0" fill="#D9A741"/><path d="M255.975 71.868L256 234.596l-127.813 63.956-.017-277.869 80.63 146.291 47.175-95.106" fill="#D9A741"/>
-            </svg>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold">Amazon SES</h4>
-            <p className="mt-1">
-            A cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
-            </p>
-          </div>
-        </div>
+        </div>s
       </div>
     </div>
-    )
+  );
 }
