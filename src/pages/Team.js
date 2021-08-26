@@ -9,8 +9,8 @@ const people = [
         '/chen.jpeg',
       bio:
       'Favorite coffee: Chai latte',
-      twitterUrl: '#',
-      linkedinUrl: '#',
+      twitterUrl: 'https://twitter.com/devchen1',
+      linkedinUrl: 'https://www.linkedin.com/in/hi-yusei/',
     },
     {
         name: 'Derek Hudgins',
@@ -20,7 +20,7 @@ const people = [
         bio:
           'Favorite coffee: Americano',
         twitterUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/derekhudgins/',
       },
       {
         name: 'Kyle Mayer',
@@ -36,10 +36,11 @@ const people = [
         name: 'Peter Montano',
         role: 'Full-Stack Web Developer',
         imageUrl:
-        '/gradient4.png',
+        '/peter.jpeg',
         bio:
         'Favorite coffee: Chai latte',
-        linkedinUrl: '#',
+        twitterUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/petermontano/',
       }
   ]
 

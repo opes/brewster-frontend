@@ -3,15 +3,15 @@ import axios from 'axios';
 
 function LandingContent() {
 
-  const [data, setData] = useState({ hits: [] });
+  const [drinks, setDrinks] = useState( [] );
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
         'https://warm-gorge-13979.herokuapp.com/api/v1/drinks',
       );
-
-      setData(result.data);
+        console.log(result.data);
+      setDrinks(result.data);
     };
 
     fetchData();
@@ -25,9 +25,12 @@ function LandingContent() {
           <div className="mt-6 flex">
             <div className="mr-4 flex-shrink-0"></div>
                   <ul>
-            {data.hits.map(item => (
-              <li key={item.objectID}>
-                <a href={item.url}>{item.title}</a>
+            {drinks.map(item => (
+              <li key={item.id}>
+               {item.drinkName}
+               {item.brew}
+               {item.description}
+               {item.ingredients}
               </li>
             ))}
           </ul>
