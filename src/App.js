@@ -12,6 +12,7 @@ import Team from './pages/Team.js';
 import Resources from './pages/Resources.js';
 import About from './pages/About.js';
 import Landing from './pages/Landing.js';
+import EndPoint from "./pages/EndPoints.js";
 export default class App extends Component {
 
 render() {
@@ -53,6 +54,11 @@ render() {
             path="/landing"
             exact
             render={(routerProps) => <Landing {...routerProps} />}
+          />
+            <Route
+            path="/endPoints"
+            exact
+            render={(routerProps) => <EndPoint {...routerProps} />}
           />
           </Switch>
         </div>
