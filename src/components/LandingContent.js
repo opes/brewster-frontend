@@ -25,10 +25,13 @@ function LandingContent() {
             <ul>
               {drinks.map((item) => (
                 <li key={item.id}>
-                  <p>{item.drinkName}</p>
-                  {/* <p>{item.brew}</p>
+                  <div className="border-solid border-4 m-4 p-8 grid grid-cols-4">
+
+                  <p className="text-lg font-bold ">{item.drinkName}</p>
+                  <p>{item.brew}</p>
                   <p>{item.description}</p>
-                  <p>{item.ingredients}</p> */}
+                  <p>{item.ingredients}</p>
+                  </div>
                 </li>
               ))}
             </ul>
