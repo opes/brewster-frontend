@@ -30,7 +30,7 @@ function LandingContent() {
                   <p className="text-lg font-bold ">{item.drinkName}</p>
                   <p>{item.brew}</p>
                   <p>{item.description}</p>
-                  <p>{item.ingredients}</p>
+                  <p className="ml-7">{item.ingredients}</p>
                   </div>
                 </li>
               ))}

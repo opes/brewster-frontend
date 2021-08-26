@@ -5,33 +5,33 @@ export default function EndPointContent() {
         <div className="flex">
           <div className="mt-6 flex">
             <div className="mr-4 flex-shrink-0"></div>
-            <div className="border-solid border-4 m-4 p-8 grid grid-cols-4">
+            <div className="border-solid border-4 m-4 p-8 grid grid-cols-2">
               <div>
-              <p>
-              GET
+              <p className="text-lg font-bold">
+              GET all drinks
               </p>
               <a href="https://warm-gorge-13979.herokuapp.com/api/v1/drinks">
-              <p>
+              <p className="text-blue-700">
               https://warm-gorge-13979.herokuapp.com/api/v1/drinks
               </p>
               </a>
-              <p>
-              https://warm-gorge-13979.herokuapp.com/api/v1/drinks/:id
+              <p className="text-lg font-bold mt-2">
+              GET drinks by "Espresso"
               </p>
-
+              <a href="https://warm-gorge-13979.herokuapp.com/api/v1/drinks?type=espresso">
+              <p className="text-blue-700">
+              https://warm-gorge-13979.herokuapp.com/api/v1/drinks?type=espresso
+              </p>
+              </a>
+              <p className="text-lg font-bold mt-2">
+              GET drinks by "Drip"
+              </p>
+              <a href="https://warm-gorge-13979.herokuapp.com/api/v1/drinks?type=drip">
+              <p className="text-blue-700">
+              https://warm-gorge-13979.herokuapp.com/api/v1/drinks?type=drip
+              </p>
+              </a>
               </div>
-              <p>
-              PUT
-              </p>
-              <p>
-              https://warm-gorge-13979.herokuapp.com/api/v1/drinks/:id
-              </p>
-              <p>
-              DELETE
-              </p>
-              <p>
-              https://warm-gorge-13979.herokuapp.com/api/v1/drinks/:id
-              </p>
             </div>
           </div>
         </div>
