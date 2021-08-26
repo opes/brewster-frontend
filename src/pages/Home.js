@@ -242,7 +242,7 @@ export default function Home() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover object-top"
-                    src="/ac2.png"
+                    src="/ac.png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
