@@ -168,7 +168,7 @@ export default function Home() {
                     <div>
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        src="/brewster-mini.png"
                         alt="Brewster"
                         href="/"
                       />
@@ -251,11 +251,11 @@ export default function Home() {
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                     <span className="block text-white">Brewster API</span>
                     <span className="block text-indigo-200">
-                      what dreams are made of
+                    simple coffee data
                     </span>
                   </h1>
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                  An open source project to help you query coffee. Search, browser, sort, filter espresso, askfjakfjakjfjahd
+                  An open source project to help you query coffee with RESTful endpoints.
                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -263,13 +263,13 @@ export default function Home() {
                         href="/landing"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
                       >
-                        ###
+                        Get Started
                       </a>
                       <a
                         href="#"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                       >
-                        ###
+                        Documentation
                       </a>
                     </div>
                   </div>
