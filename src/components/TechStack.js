@@ -88,7 +88,7 @@ export default function TechStack() {
               design, directly in your markup.
             </p>
           </div>
-        </div>s
+        </div>
       </div>
     </div>
   );
