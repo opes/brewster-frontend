@@ -13,9 +13,9 @@ import Resources from './pages/Resources.js';
 import About from './pages/About.js';
 import Landing from './pages/Landing.js';
 import EndPoint from "./pages/EndPoints.js";
-export default class App extends Component {
 
-render() {
+export default class App extends Component {
+  render() {
     return (
       <Router>
         <div>
@@ -66,4 +66,3 @@ render() {
     );
   }
 };
-

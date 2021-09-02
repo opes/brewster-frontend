@@ -9,7 +9,7 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 
-const solutions = [
+const solutions = [ // Did you mean to use this?
   {
     name: "Documentation",
     description:
